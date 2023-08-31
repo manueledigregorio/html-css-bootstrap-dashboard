@@ -36,13 +36,28 @@ header .logo-big{
 
 .header-right a{
   color:#36383E;
-  padding-right: 15px;
+  padding-right: 17px;
 }
 
 .fa-bell{
   color: #ff8f00;
 }
 
+.header-center{
+  background-color: #E5E5E5;
+  border-radius: 5px; 
+}
+
+.custom-input {
+  background-color: #E5E5E5; 
+  box-shadow: none;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
 
 /***MAIN***/
 main{
