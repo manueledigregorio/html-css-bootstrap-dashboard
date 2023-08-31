@@ -10,26 +10,59 @@
   <title>Dashboard</title>
 </head>
 <body>
-  <header class="debug fixed-top ">
-      <div></div>
+  <header class="debug fixed-top d-flex  align-items-center ">
+    <div class="container-fluid my-container d-flex debug align-items-center  ">
+
+      <div class="header-left" >
+        <img class="logo-mobile d-lg-none " src="img/mobile-logo.png" alt="">
+        <img class=" logo-big d-none d-lg-inline-block " src="img/logo.svg" alt="">
+      </div>
+
+
+      <div class="header-center">
+
+      </div>
+
+
+      <div class="header-right"></div>
+    </div>
+     
   </header>
   <main class="d-flex ">
-    <section class="bar-left debug">
-      <div class="bar-top">
+    <section class="bar-left debug py-3 d-flex justify-content-between flex-column  ">
+      <div class="bar-top  ">
         <ul class="text-center ">
-          <li>
-            <a href="#"><i class="fa-solid fa-house"></i></a>
+
+          <li class="pb-2 ">
+            <a class="btn btn-transparent " href="#">
+              <i class="fa-solid fa-house px-3"></i>
+              <span class="d-none d-lg-inline-block ">Home</span>
+            </a>
           </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-chart-simple"></i></a>
+
+          <li class="pb-2">
+            <a class="btn btn-transparent " href="#">
+              <i class="fa-solid fa-chart-simple px-3  "></i>
+              <span class="d-none d-lg-inline-block ">Starts</span>
+            </a>
           </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-signal"></i></a>
+
+          <li class="pb-2">
+            <a class="btn btn-transparent " href="#">
+              <i class="fa-solid fa-signal px-3  "></i>
+              <span class="d-none d-lg-inline-block ">Signals</span>
+            </a>
           </li>
       
-        </ul>
+        </ul >
       </div>
-      <div class="bar-botton"></div>
+      <div class="bar-botton text-center">
+        <a class="btn btn-transparent " href="#">
+          <i class="fa-solid fa-gear"></i>
+          <span class="d-none d-lg-inline-block ">Admin</span>
+        </a>
+
+      </div>
        
 
     </section>
