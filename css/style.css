@@ -1,0 +1,48 @@
+.debug{
+  border: 2px solid black
+  
+}
+
+ul{
+  list-style: none; 
+ }
+ 
+ a{
+   text-decoration: none;
+ }
+/****HEADER***/
+header{
+  height: 80px; 
+}
+
+/***MAIN***/
+main{
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+}
+
+/****BAR-TOP**/
+
+.bar-left{
+  width: 70px;
+  height: 100%;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: #051e34;
+}
+
+.bar-top{
+  width: 100%;
+}
+
+.bar-top ul{
+  padding: 0;
+}
+
+.bar-top ul li i{
+  color: white;
+}
+
+/****CONTENUTO-GRANDE**/
+.content-big{
+  width: calc(100vw - 70px);
+}
