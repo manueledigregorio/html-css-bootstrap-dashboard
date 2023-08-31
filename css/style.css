@@ -5,7 +5,10 @@
 
 ul{
   list-style: none; 
- }
+  padding: 0;
+  margin: 0;
+}
+ 
  
  a{
    text-decoration: none;
@@ -29,6 +32,15 @@ header .logo-mobile{
 
 header .logo-big{
   width: 130px;
+}
+
+.header-right a{
+  color:#36383E;
+  padding-right: 15px;
+}
+
+.fa-bell{
+  color: #ff8f00;
 }
 
 
