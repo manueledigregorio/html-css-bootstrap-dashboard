@@ -102,12 +102,55 @@ main{
   width: calc(100vw - 70px);
 }
 
+.jumbotron{
+  background-color: #1A72E8;
+  color: white;
+}
+
+.plus{
+  height: 40px;
+  width: 40px;
+  border: 1px solid white ; 
+  border-radius: 5px;
+}
+
+.plus:hover{
+  color: black;
+  background-color: white;
+}
+
+.offcanvas.offcanvas-enlarged {
+  width: 100%; 
+  padding-right: 50px;
+
+}
+
+.custom-bt{
+  border-radius: 10px;
+  background-color: #165bba;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.custom-bt .fa-plus{
+  font-size: 0.8rem;
+}
+
+.custom-bt:hover{
+  background-color: #074191;
+}
+
 /******responsive**/
 
 @media screen and (min-width: 992px) {
   
   .bar-left{
     width:150px;
+  }
+
+  .offcanvas.offcanvas-enlarged{
+    width: 50%;
   }
   
 }

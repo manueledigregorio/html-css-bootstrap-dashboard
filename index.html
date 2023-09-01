@@ -10,6 +10,7 @@
   <title>Dashboard</title>
 </head>
 <body>
+  <!--INIZIO HEADER-->
   <header class="debug fixed-top d-flex  align-items-center ">
     <div class="container-fluid my-container d-flex debug align-items-center justify-content-between  ">
 
@@ -50,8 +51,9 @@
     </div>
      
   </header>
+  <!--FINE HEADER---->
   <main class="d-flex ">
-    <section class="bar-left debug py-3 d-flex justify-content-between flex-column  ">
+    <section class="bar-left py-3 d-flex justify-content-between flex-column  ">
       <div class="bar-top  ">
         <ul class="text-center ">
 
@@ -89,7 +91,184 @@
 
     </section>
     <section class="content-big overflow-y-auto">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolorem aut pariatur, neque numquam sequi ratione, reiciendis aliquid atque quis quos asperiores. Eligendi deleniti maxime minus voluptatum? Voluptas, porro voluptatum ipsa officia aut repellat accusamus nostrum! Nesciunt officia sed ipsum sint quasi dolor! Culpa et voluptates molestiae adipisci voluptate sint iure aliquid, labore vel nostrum ex suscipit sed ut modi accusantium iste! Eum hic odit maiores rem quasi qui voluptates aliquam voluptas veritatis earum perspiciatis velit, quo modi suscipit dicta illo excepturi tempore quia vitae perferendis cupiditate accusamus molestias rerum dolorum. In harum inventore laborum voluptatum provident, molestias laudantium tenetur quis ea alias at corrupti, quod omnis nulla non a. Quidem, cumque. Nesciunt, soluta velit ex, quidem nihil numquam libero voluptate sunt quaerat ea ipsam magni facere et magnam minima, quis quod corporis delectus. Voluptates soluta eveniet ipsum asperiores id, autem hic consequatur cumque quisquam magni unde quas cupiditate odio. Dolorem blanditiis nisi nam aspernatur corporis molestias vero accusamus. Est labore sunt ad nulla non provident! Repellat sit, soluta assumenda dignissimos est amet natus reiciendis illo nostrum praesentium mollitia qui aliquid odit optio illum nam magnam ipsam adipisci cumque eaque esse quos hic debitis quia. Excepturi commodi consequatur, expedita architecto nulla, enim quis cumque tenetur in labore laboriosam officia, porro repellat! Accusantium, blanditiis ea iusto, vel cumque, cum ex eligendi beatae ducimus eum voluptate deserunt fugiat rerum! Dignissimos recusandae totam consequatur provident non, porro fugit repellendus nesciunt maxime animi blanditiis impedit expedita, quo obcaecati explicabo, quas quibusdam libero! Deserunt optio odio qui magni incidunt. Quibusdam nulla aspernatur dolore commodi laborum ducimus voluptatem dicta veniam quam maiores itaque odit error sapiente fugit alias adipisci suscipit, iure sed earum culpa cum rem obcaecati aliquam. Earum tempora quaerat molestias est. Eum maxime placeat voluptas cum commodi? Autem vitae nihil similique atque! Dolorum, libero necessitatibus? Impedit, natus harum dicta velit cum libero nesciunt? Non eius laboriosam minus vero esse, dignissimos libero provident nam laudantium, consequuntur soluta. Itaque aspernatur qui ipsa consectetur! Quisquam ex, illo cum earum labore ipsa doloribus saepe. Consectetur quos hic recusandae tempora atque illo reiciendis provident fugiat natus odio! Obcaecati odio libero, vel ipsa totam, dolor tempora ea velit, quisquam numquam aspernatur ipsum. Sit dolorum placeat a, repellat nostrum dolor sunt ad blanditiis accusamus distinctio! Voluptas commodi in molestiae eos similique provident quos, incidunt odio consectetur voluptates beatae consequuntur deserunt consequatur ducimus eum mollitia minus? Quidem eos quas officiis eveniet ducimus id nostrum laboriosam beatae quam atque possimus alias, aspernatur error dolore natus magni. Possimus ipsum provident nulla voluptatibus modi! Commodi vel praesentium, sunt vitae minima ipsa voluptate? Temporibus eos necessitatibus quidem aut facere tempora at magni eaque beatae omnis recusandae illum, molestiae quo libero possimus vel praesentium eligendi similique atque! Explicabo minima repellendus tenetur ducimus? Cum deleniti dolores ipsa sunt, sint nam ducimus dolorem fuga possimus. Voluptatum quia laboriosam accusamus enim porro. Animi id accusantium quaerat praesentium ullam suscipit alias repudiandae, odio cumque unde natus debitis omnis illo molestias cupiditate at veritatis! Earum ex corporis repellendus ipsam quis accusantium voluptatem.
+      <div class="container-fluid jumbotron ">
+        <div class="row ">
+          <div class="col-12 col-lg-4 col-xl-2 order-lg-3 py-2 "> 
+            <div class="d-flex align-items-center pt-3  ">
+              <p class="pe-3 m-0 ">Nuovo Studente</p>
+              <button class="navbar-toggler btn plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+               <span><i class="fa-solid fa-plus"></i></span> 
+              </button>
+            </div>
+            
+
+              <div class="offcanvas offcanvas-enlarged offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci nuovo Studente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body ">
+
+                  <form action="#" method="POST">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 p-2 ">
+                      
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+          
+                    </div>
+
+
+                    <div class="col-12 col-lg-6 p-2 ">
+                      
+                        <label for="cognome" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="cognome" name="cognome" placeholder="Cognome">  
+                      
+                        
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-2">
+                      <label for="email">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="email" 
+                        class="form-control" 
+                        placeholder="Email Address" 
+                        aria-label="Email Address" 
+                        aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-2">
+                      <label for="password">Password</label>
+                      <input type="password" 
+                      class="form-control" 
+                      id="password"
+                      name="password" 
+                      placeholder="Password">
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-2">
+                      <label for="email">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="">@</span>
+                        <input type="email" 
+                        class="form-control" 
+                        placeholder="Email Address" 
+                        aria-label="Email Address" 
+                        aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-2">
+                      <label for="password">Password</label>
+                      <input type="password" 
+                      class="form-control" 
+                      id=""
+                      name="password" 
+                      placeholder="Password">
+                    </div>
+
+                    <div class="col-12 p-2">
+                      <label for="indirizzo">Indirizzo</label>
+                      <input type="text" 
+                      class="form-control" 
+                      id="" name="Indirizzo" 
+                      placeholder="Indirizzo" required>
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-2">
+                      <label for="citta">Città</label>
+                      <input type="text" 
+                      class="form-control" 
+                      id="" name="citta" 
+                      placeholder="Città" required>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2">
+                      <label for="nation">Stato</label>
+                      <select class="form-control" name="nation" id="nation">
+                        <option value="">Scegli...</option>
+                        <option value="1">Italy</option>
+                        <option value="2">USA</option>
+                        <option value="3">Cina</option>
+                        <option value="4">Japan</option>
+                        <option value="5">Spain</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 col-lg-2 p-2">
+                      <label for="citta">Cup</label>
+                      <input type="text" 
+                      class="form-control" 
+                      id="" 
+                      name="citta" 
+                      placeholder="Città" required>
+                    </div>
+
+                    <div class="col-12 p-2">
+                      <label for="formFileMultiple" class="form-label">
+                        Foto
+                      </label>
+                      <input class="form-control" 
+                      type="file" 
+                      id="formFileMultiple" multiple>
+                    </div>
+
+                    <div class="col-12 form-check m-3">
+                      <input 
+                      class="form-check-input" 
+                      type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+
+                    <div class="col-auto m-2">
+                      <button type="submit" class="btn btn-primary mb-3">
+                        Salva
+                      </button>
+                      <button type="reset" class="btn btn-warning mb-3">
+                        Svuota
+                      </button>
+                    </div>
+                  </div>
+                  </form>
+                </div>
+              </div>
+           
+            
+          </div>
+          <div class="col-12 col-lg-4 col-xl-6 py-3 "> 
+            <div>
+              <h3 class="d-inline-block  ">Boolean</h3>
+              <button class="custom-bt px-2  m-1 ">Piano Blaze</button>
+            </div>
+
+            <div class=" ">
+              <button class="custom-bt"> 3app</button> 
+              <span><i class="fa-solid fa-angles-right m-1 "></i></span>
+              <button class="custom-bt d-xl-none  "> <i class="fa-solid fa-plus "></i></button>
+              <button class="custom-bt d-none d-xl-inline-block  px-2   ">Boolean blog app</button>
+              <button class="custom-bt d-none d-xl-inline-block  px-2   ">Boolean blog app</button>
+              <button class="custom-bt d-none d-xl-inline-block  px-2  ">Boolean blog app</button>
+
+            </div>
+
+            
+          </div>
+          <div class="col-12 col-lg-4 py-2">
+
+            <span>Studenti online negli ultimi 30 minuti</span>
+            <h2 class="p-2 ">125</h2>
+
+          </div>
+  
+        </div>
+      </div>
+      
+
 
     </section>
     
