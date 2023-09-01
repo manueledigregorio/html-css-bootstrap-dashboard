@@ -1,55 +1,53 @@
-.debug{
-  border: 2px solid black
-  
+.debug {
+  border: 2px solid black;
 }
 
-ul{
-  list-style: none; 
+ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
- 
- 
- a{
-   text-decoration: none;
- }
+
+a {
+  text-decoration: none;
+}
 /****HEADER***/
-header{
-  height: 80px; 
-  background-color: #F8F9FA;
+header {
+  height: 80px;
+  background-color: #f8f9fa;
 }
 
 header .my-container {
   width: 100%;
   background-color: white;
   height: 50px;
-  width: 100%;  
+  width: 100%;
 }
 
-header .logo-mobile{
+header .logo-mobile {
   width: 50px;
 }
 
-header .logo-big{
+header .logo-big {
   width: 130px;
 }
 
-.header-right a{
-  color:#36383E;
+.header-right a {
+  color: #36383e;
   padding-right: 17px;
 }
 
-.fa-bell{
+.fa-bell {
   color: #ff8f00;
 }
 
-.header-center{
-  background-color: #E5E5E5;
-  border-radius: 5px; 
+.header-center {
+  background-color: #e5e5e5;
+  border-radius: 5px;
 }
 
 .custom-input {
-  background-color: #E5E5E5; 
+  background-color: #e5e5e5;
   box-shadow: none;
 }
 
@@ -60,25 +58,25 @@ header .logo-big{
 }
 
 /***MAIN***/
-main{
+main {
   margin-top: 80px;
   height: calc(100vh - 80px);
 }
 
 /****BAR-TOP**/
 
-.bar-left{
+.bar-left {
   width: 70px;
   height: 100%;
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
 }
 
-.bar-top{
+.bar-top {
   width: 100%;
 }
 
-.bar-top ul{
+.bar-top ul {
   padding: 0;
 }
 
@@ -98,34 +96,33 @@ main{
 }
 
 /****CONTENUTO-GRANDE**/
-.content-big{
+.content-big {
   width: calc(100vw - 70px);
 }
 
-.jumbotron{
-  background-color: #1A72E8;
+.jumbotron {
+  background-color: #1a72e8;
   color: white;
 }
 
-.plus{
+.plus {
   height: 40px;
   width: 40px;
-  border: 1px solid white ; 
+  border: 1px solid white;
   border-radius: 5px;
 }
 
-.plus:hover{
+.plus:hover {
   color: black;
   background-color: white;
 }
 
 .offcanvas.offcanvas-enlarged {
-  width: 100%; 
+  width: 100%;
   padding-right: 50px;
-
 }
 
-.custom-bt{
+.custom-bt {
   border-radius: 10px;
   background-color: #165bba;
   border: none;
@@ -133,24 +130,34 @@ main{
   font-size: 0.9rem;
 }
 
-.custom-bt .fa-plus{
+.custom-bt .fa-plus {
   font-size: 0.8rem;
 }
 
-.custom-bt:hover{
+.custom-bt:hover {
   background-color: #074191;
+}
+
+th img {
+  width: 30px;
+}
+
+.custom-bt-table {
+  border-radius: 6px;
+  border: none;
+  font-size: 0.8rem;
+  padding: 1px 7px;
+  color: white;
 }
 
 /******responsive**/
 
 @media screen and (min-width: 992px) {
-  
-  .bar-left{
-    width:150px;
+  .bar-left {
+    width: 150px;
   }
 
-  .offcanvas.offcanvas-enlarged{
+  .offcanvas.offcanvas-enlarged {
     width: 50%;
   }
-  
 }

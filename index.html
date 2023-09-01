@@ -1,342 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Dashboard</title>
-</head>
-<body>
-  <!--INIZIO HEADER-->
-  <header class="debug fixed-top d-flex  align-items-center ">
-    <div class="container-fluid my-container d-flex debug align-items-center justify-content-between  ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!--INIZIO HEADER-->
+    <header class="debug fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid my-container d-flex debug align-items-center justify-content-between"
+      >
+        <div class="header-left">
+          <img class="logo-mobile d-lg-none" src="img/mobile-logo.png" alt="" />
+          <img
+            class="logo-big d-none d-lg-inline-block"
+            src="img/logo.svg"
+            alt=""
+          />
+        </div>
 
-      <div class="header-left" >
-        <img class="logo-mobile d-lg-none " src="img/mobile-logo.png" alt="">
-        <img class=" logo-big d-none d-lg-inline-block " src="img/logo.svg" alt="">
+        <div class="header-center px-3 d-flex align-items-center w-75">
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+          <form class="w-100">
+            <input
+              class="form-control custom-input me-2"
+              type="search"
+              placeholder="Prova a cercare: Lezioni di laravel"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+
+        <div class="header-right">
+          <ul class="d-flex">
+            <li>
+              <a class="d-none d-lg-inline-block" href=""
+                ><i class="fa-solid fa-list-ul"></i
+              ></a>
+            </li>
+            <li>
+              <a class="d-none d-lg-inline-block" href=""
+                ><i class="fa-solid fa-circle-question"></i
+              ></a>
+            </li>
+            <li>
+              <a class="d-none d-lg-inline-block" href=""
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </li>
+
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
+    </header>
+    <!--FINE HEADER---->
+    <main class="d-flex">
+      <section class="bar-left py-3 d-flex justify-content-between flex-column">
+        <div class="bar-top">
+          <ul class="text-center">
+            <li class="pb-2">
+              <a class="btn btn-transparent" href="#">
+                <i class="fa-solid fa-house px-3"></i>
+                <span class="d-none d-lg-inline-block">Home</span>
+              </a>
+            </li>
 
+            <li class="pb-2">
+              <a class="btn btn-transparent" href="#">
+                <i class="fa-solid fa-chart-simple px-3"></i>
+                <span class="d-none d-lg-inline-block">Starts</span>
+              </a>
+            </li>
 
-      <div class="header-center px-3 d-flex align-items-center  w-75 ">
-        <div><i class="fa-solid fa-magnifying-glass"></i></div>
-        <form class="w-100 ">
-          <input class="form-control custom-input me-2" type="search" placeholder="Prova a cercare: Lezioni di laravel" aria-label="Search">
-        </form>
-      </div>
+            <li class="pb-2">
+              <a class="btn btn-transparent" href="#">
+                <i class="fa-solid fa-signal px-3"></i>
+                <span class="d-none d-lg-inline-block">Signals</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bar-botton text-center">
+          <a class="btn btn-transparent" href="#">
+            <i class="fa-solid fa-gear"></i>
+            <span class="d-none d-lg-inline-block">Admin</span>
+          </a>
+        </div>
+      </section>
+       <!----INIZIO  CONTAINER BIG--->
+      <section class="content-big overflow-y-auto">
+         <!----FINE CONTAINER BIG--->
+          <!----INIZIO JUMBOTRON --->
+        <div class="container-fluid jumbotron">
+          <div class="row">
+            <div class="col-12 col-lg-4 col-xl-2 order-lg-3 py-2">
+              <div class="d-flex align-items-center pt-3">
+                <p class="pe-3 m-0">Nuovo Studente</p>
+                <button
+                  class="navbar-toggler btn plus"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span><i class="fa-solid fa-plus"></i></span>
+                </button>
+              </div>
 
-
-      <div class="header-right ">
-        <ul class="d-flex  ">
-          <li><a class="d-none d-lg-inline-block " href=""><i class="fa-solid fa-list-ul"></i></a></li>
-          <li><a class="d-none d-lg-inline-block " href=""><i class="fa-solid fa-circle-question"></i></a></li>
-          <li><a class="d-none d-lg-inline-block " href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-        
-          <li class="nav-item dropdown px-2 ">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-bell "></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-     
-  </header>
-  <!--FINE HEADER---->
-  <main class="d-flex ">
-    <section class="bar-left py-3 d-flex justify-content-between flex-column  ">
-      <div class="bar-top  ">
-        <ul class="text-center ">
-
-          <li class="pb-2 ">
-            <a class="btn btn-transparent " href="#">
-              <i class="fa-solid fa-house px-3"></i>
-              <span class="d-none d-lg-inline-block ">Home</span>
-            </a>
-          </li>
-
-          <li class="pb-2">
-            <a class="btn btn-transparent " href="#">
-              <i class="fa-solid fa-chart-simple px-3  "></i>
-              <span class="d-none d-lg-inline-block ">Starts</span>
-            </a>
-          </li>
-
-          <li class="pb-2">
-            <a class="btn btn-transparent " href="#">
-              <i class="fa-solid fa-signal px-3  "></i>
-              <span class="d-none d-lg-inline-block ">Signals</span>
-            </a>
-          </li>
-      
-        </ul >
-      </div>
-      <div class="bar-botton text-center">
-        <a class="btn btn-transparent " href="#">
-          <i class="fa-solid fa-gear"></i>
-          <span class="d-none d-lg-inline-block ">Admin</span>
-        </a>
-
-      </div>
-       
-
-    </section>
-    <section class="content-big overflow-y-auto">
-      <div class="container-fluid jumbotron ">
-        <div class="row ">
-          <div class="col-12 col-lg-4 col-xl-2 order-lg-3 py-2 "> 
-            <div class="d-flex align-items-center pt-3  ">
-              <p class="pe-3 m-0 ">Nuovo Studente</p>
-              <button class="navbar-toggler btn plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-               <span><i class="fa-solid fa-plus"></i></span> 
-              </button>
-            </div>
-            
-
-              <div class="offcanvas offcanvas-enlarged offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div
+                class="offcanvas offcanvas-enlarged offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci nuovo Studente</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Inserisci nuovo Studente
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
 
-                <div class="offcanvas-body ">
-
+                <div class="offcanvas-body">
                   <form action="#" method="POST">
-                  <div class="row">
-                    <div class="col-12 col-lg-6 p-2 ">
-                      
+                    <div class="row">
+                      <div class="col-12 col-lg-6 p-2">
                         <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-          
-                    </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Nome"
+                        />
+                      </div>
 
-
-                    <div class="col-12 col-lg-6 p-2 ">
-                      
+                      <div class="col-12 col-lg-6 p-2">
                         <label for="cognome" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="cognome" name="cognome" placeholder="Cognome">  
-                      
-                        
-                    </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cognome"
+                          name="cognome"
+                          placeholder="Cognome"
+                        />
+                      </div>
 
-                    <div class="col-12 col-lg-6 p-2">
-                      <label for="email">Email</label>
-                      <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="email" 
-                        class="form-control" 
-                        placeholder="Email Address" 
-                        aria-label="Email Address" 
-                        aria-describedby="basic-addon1">
+                      <div class="col-12 col-lg-6 p-2">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1"
+                            >@</span
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            aria-label="Email Address"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6 p-2">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          name="password"
+                          placeholder="Password"
+                        />
+                      </div>
+
+                      <div class="col-12 col-lg-6 p-2">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="">@</span>
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            aria-label="Email Address"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6 p-2">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id=""
+                          name="password"
+                          placeholder="Password"
+                        />
+                      </div>
+
+                      <div class="col-12 p-2">
+                        <label for="indirizzo">Indirizzo</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id=""
+                          name="Indirizzo"
+                          placeholder="Indirizzo"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-12 col-lg-6 p-2">
+                        <label for="citta">Città</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id=""
+                          name="citta"
+                          placeholder="Città"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-12 col-lg-4 p-2">
+                        <label for="nation">Stato</label>
+                        <select class="form-control" name="nation" id="nation">
+                          <option value="">Scegli...</option>
+                          <option value="1">Italy</option>
+                          <option value="2">USA</option>
+                          <option value="3">Cina</option>
+                          <option value="4">Japan</option>
+                          <option value="5">Spain</option>
+                        </select>
+                      </div>
+
+                      <div class="col-12 col-lg-2 p-2">
+                        <label for="citta">Cup</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id=""
+                          name="citta"
+                          placeholder="Città"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-12 p-2">
+                        <label for="formFileMultiple" class="form-label">
+                          Foto
+                        </label>
+                        <input
+                          class="form-control"
+                          type="file"
+                          id="formFileMultiple"
+                          multiple
+                        />
+                      </div>
+
+                      <div class="col-12 form-check m-3">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+
+                      <div class="col-auto m-2">
+                        <button type="submit" class="btn btn-primary mb-3">
+                          Salva
+                        </button>
+                        <button type="reset" class="btn btn-warning mb-3">
+                          Svuota
+                        </button>
                       </div>
                     </div>
-
-                    <div class="col-12 col-lg-6 p-2">
-                      <label for="password">Password</label>
-                      <input type="password" 
-                      class="form-control" 
-                      id="password"
-                      name="password" 
-                      placeholder="Password">
-                    </div>
-
-                    <div class="col-12 col-lg-6 p-2">
-                      <label for="email">Email</label>
-                      <div class="input-group">
-                        <span class="input-group-text" id="">@</span>
-                        <input type="email" 
-                        class="form-control" 
-                        placeholder="Email Address" 
-                        aria-label="Email Address" 
-                        aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 p-2">
-                      <label for="password">Password</label>
-                      <input type="password" 
-                      class="form-control" 
-                      id=""
-                      name="password" 
-                      placeholder="Password">
-                    </div>
-
-                    <div class="col-12 p-2">
-                      <label for="indirizzo">Indirizzo</label>
-                      <input type="text" 
-                      class="form-control" 
-                      id="" name="Indirizzo" 
-                      placeholder="Indirizzo" required>
-                    </div>
-
-                    <div class="col-12 col-lg-6 p-2">
-                      <label for="citta">Città</label>
-                      <input type="text" 
-                      class="form-control" 
-                      id="" name="citta" 
-                      placeholder="Città" required>
-                    </div>
-
-                    <div class="col-12 col-lg-4 p-2">
-                      <label for="nation">Stato</label>
-                      <select class="form-control" name="nation" id="nation">
-                        <option value="">Scegli...</option>
-                        <option value="1">Italy</option>
-                        <option value="2">USA</option>
-                        <option value="3">Cina</option>
-                        <option value="4">Japan</option>
-                        <option value="5">Spain</option>
-                      </select>
-                    </div>
-
-                    <div class="col-12 col-lg-2 p-2">
-                      <label for="citta">Cup</label>
-                      <input type="text" 
-                      class="form-control" 
-                      id="" 
-                      name="citta" 
-                      placeholder="Città" required>
-                    </div>
-
-                    <div class="col-12 p-2">
-                      <label for="formFileMultiple" class="form-label">
-                        Foto
-                      </label>
-                      <input class="form-control" 
-                      type="file" 
-                      id="formFileMultiple" multiple>
-                    </div>
-
-                    <div class="col-12 form-check m-3">
-                      <input 
-                      class="form-check-input" 
-                      type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Seleziona per proseguire
-                      </label>
-                    </div>
-
-                    <div class="col-auto m-2">
-                      <button type="submit" class="btn btn-primary mb-3">
-                        Salva
-                      </button>
-                      <button type="reset" class="btn btn-warning mb-3">
-                        Svuota
-                      </button>
-                    </div>
-                  </div>
                   </form>
                 </div>
               </div>
-           
-            
-          </div>
-          <div class="col-12 col-lg-4 col-xl-6 py-3 "> 
-            <div>
-              <h3 class="d-inline-block  ">Boolean</h3>
-              <button class="custom-bt px-2  m-1 ">Piano Blaze</button>
             </div>
+            <div class="col-12 col-lg-4 col-xl-6 py-3">
+              <div>
+                <h3 class="d-inline-block">Boolean</h3>
+                <button class="custom-bt px-2 m-1">Piano Blaze</button>
+              </div>
 
-            <div class=" ">
-              <button class="custom-bt"> 3app</button> 
-              <span><i class="fa-solid fa-angles-right m-1 "></i></span>
-              <button class="custom-bt d-xl-none  "> <i class="fa-solid fa-plus "></i></button>
-              <button class="custom-bt d-none d-xl-inline-block  px-2   ">Boolean blog app</button>
-              <button class="custom-bt d-none d-xl-inline-block  px-2   ">Boolean blog app</button>
-              <button class="custom-bt d-none d-xl-inline-block  px-2  ">Boolean blog app</button>
-            </div>  
-          </div>
-          <div class="col-12 col-lg-4 py-2 ">
-            <span>Studenti online negli ultimi 30 minuti</span>
-            <h2 class="p-2 ">125</h2>
+              <div class=" ">
+                <button class="custom-bt">3app</button>
+                <span><i class="fa-solid fa-angles-right m-1"></i></span>
+                <button class="custom-bt d-xl-none">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="custom-bt d-none d-xl-inline-block px-2">
+                  Boolean blog app
+                </button>
+                <button class="custom-bt d-none d-xl-inline-block px-2">
+                  Boolean blog app
+                </button>
+                <button class="custom-bt d-none d-xl-inline-block px-2">
+                  Boolean blog app
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 py-2">
+              <span>Studenti online negli ultimi 30 minuti</span>
+              <h2 class="p-2">125</h2>
+            </div>
           </div>
         </div>
-      </div>
-       
+        <!----FINE JUMBOTRON --->
 
-      <div class="container-fluid ">
-      <div class="row">
-        <div class="col-12 col-xl-8 ">
+        <div class="container-fluid">
+          <div class="row ">
+             <!---START PARTE SINISTRA CONTAINER BIG--->
+            <div class="col-12 col-xl-8">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Prossime Classi</h3>
+                </div>
 
-          <div class="card">
-            <div class="card-header">
-              <h3>Prossime Classi </h3>
+                <table class="table">
+              
+                  <thead>
+                    <tr>
+                      <th class="col-6">Nome</th>
+                      <th class="d-none d-lg-table-cell col-lg-2">
+                        Data di inizio
+                      </th>
+                      <th class="d-none d-lg-table-cell col-lg-1">ROI</th>
+                      <th class="col-3 col-lg-2 text-center">Stato</th>
+                      <th class="col-3 col-lg-1 text-center">Azioni</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-success custom-bt-table btn-sm"
+                        >
+                          Done
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-success custom-bt-table btn-sm"
+                        >
+                          Done
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-warning custom-bt-table btn-sm"
+                        >
+                          Process
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-success custom-bt-table btn-sm"
+                        >
+                          Done
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-danger custom-bt-table btn-sm"
+                        >
+                          Fail
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-success custom-bt-table btn-sm"
+                        >
+                          Done
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-danger custom-bt-table btn-sm"
+                        >
+                          Fail
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>
+                        <img src="img/class-avatar.jpg" alt="img" />
+                        <span class="fw-normal">Classe 75</span>
+                      </th>
+                      <td class="d-none d-lg-table-cell">15 Feb 2023</td>
+                      <td class="d-none d-lg-table-cell">20%</td>
+                      <td class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn-success custom-bt-table btn-sm"
+                        >
+                          Done
+                        </button>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary me-2"
+                          >
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+               <!---- START COLONNA DEL FAQ--->
+              <div class="col-12 col-xl-4 w-100 mt-4  ">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3>F.A.Q</h3>
+                    </div>
+                    <!--- INIZIO ACCORDION---->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <!--- FINE ACCORDION---->
+                  </div>
+              </div>
+              <!---- FINE COLONNA DEL FAQ--->
             </div>
+             <!---FINE PARTE SINISTRA CONTAINER BIG--->
 
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="col-4 col-xl-4" >Nome</th>
-                  <th class="col-4 col-xl-2" >Data di inizio</th>
-                  <th class="col-4 col-xl-2" >ROI</th>
-                  <th class="col-4 col-xl-2" >Stato</th>
-                  <th class="col-4 col-xl-2" >Azioni</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="row"></th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th class="row"></th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th class="row"></th>
-                  <td >Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>@fat</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th class="row"></th>
-                  <td >Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>@fat</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th class="row"></th>
-                  <td >Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>@fat</td>
-                  <td>@fat</td>
-                </tr>
-              </tbody>
-            </table>
-            
-            
+            <!---START PARTE DESTRA CONTAINER BIG--->
+            <div class="col-12 col-xl-4">
+             <!---START TODO---->
+              <div class="card">
+                <div class="card-header">
+                  <h3>Todo</h3>
+                </div>
+
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                      <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe # 75</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                      <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+               <!---FINE TODO---->
+               <div class="card w-100 mt-4 " style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              
+            </div>
           </div>
-
-
-
+          <!---FINE PARTE DESTRA CONTAINER BIG--->
         </div>
-        <div class="col-12 col-xl-4"></div>
-
-    
-      </div>
-      
-
-    </div>
-    </section>
-    
-  </main>
-  
-</body>
+        
+        
+      </section>
+    </main>
+  </body>
 </html>
