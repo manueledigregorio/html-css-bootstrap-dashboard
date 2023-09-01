@@ -150,14 +150,24 @@ th img {
   color: white;
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 /******responsive**/
 
 @media screen and (min-width: 992px) {
   .bar-left {
     width: 150px;
   }
+  
+}
+
+@media screen and (min-width: 1200px){
 
   .offcanvas.offcanvas-enlarged {
     width: 50%;
   }
+
 }
+
